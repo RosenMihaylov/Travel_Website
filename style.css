@@ -19,7 +19,8 @@ li,
 button,
 label,
 input,
-p {
+p,
+header a {
   font-size: 2rem;
 }
 h2 {
