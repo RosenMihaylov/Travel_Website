@@ -217,6 +217,32 @@ nav ul {
   padding: 1rem 3rem;
 }
 
+/* Footer */
+footer {
+  color: #fff;
+  background: rgba(19, 28, 39, 0.8);
+  font-weight: 400;
+}
+.footer-wrapper {
+  display: flex;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  min-height: 10vh;
+  flex-wrap: wrap;
+}
+footer h5 {
+  flex: 1 1 40rem;
+}
+footer ul {
+  display: flex;
+  list-style: none;
+  flex: 1 1 40rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* animations */
 @keyframes cloudAnimation {
   from {
@@ -251,6 +277,15 @@ nav ul {
   }
   .location-head h3 {
     background: rgba(252, 252, 252, 0.5);
+  }
+  footer {
+    text-align: center;
+  }
+  .form-wrapper {
+    width: 100%;
+  }
+  footer h5 {
+    padding-bottom: 3rem;
   }
 }
 
