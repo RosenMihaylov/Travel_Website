@@ -6,6 +6,7 @@
 }
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -50,8 +51,11 @@ button:hover {
 
 /* Nav section with Hero */
 #main-head {
-  background-color: #131c27;
+  background: rgba(19, 28, 39, 0.8);
   color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 500;
 }
 nav {
   min-height: 10vh;
@@ -137,10 +141,16 @@ nav ul {
 }
 
 /* Benefits section */
-
+#benefits {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .benefits-head {
   background: #343c44;
-  padding: 3rem;
+  padding: 15vh 3rem 5vh;
   min-height: 30vh;
   display: flex;
   align-items: center;
@@ -148,6 +158,7 @@ nav ul {
   justify-content: center;
   color: #fff;
   text-align: center;
+  width: 100%;
 }
 .benefits-head h3 {
   padding: 1rem;
@@ -157,7 +168,7 @@ nav ul {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-  min-height: 70vh;
+  min-height: 60vh;
   align-items: center;
   text-align: center;
 }
@@ -181,7 +192,7 @@ nav ul {
 
 /* Contact section */
 #contact {
-  min-height: 100vh;
+  min-height: 80vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
     url("/img/contact-mountain.png") center center no-repeat;
   background-size: cover;
@@ -235,13 +246,6 @@ footer {
 footer h5 {
   flex: 1 1 40rem;
 }
-footer ul {
-  display: flex;
-  list-style: none;
-  flex: 1 1 40rem;
-  justify-content: space-between;
-  align-items: center;
-}
 
 /* animations */
 @keyframes cloudAnimation {
@@ -283,9 +287,6 @@ footer ul {
   }
   .form-wrapper {
     width: 100%;
-  }
-  footer h5 {
-    padding-bottom: 3rem;
   }
 }
 
